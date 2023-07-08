@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "pagination": {
+            "type": "object",
+            "properties": {
+                "current_page": {"type": "integer"},
+                "per_page": {"type": "integer"},
+                "total_entries": {"type": "integer"}
+            },
+            "required": ["current_page", "per_page", "total_entries"]
+        },
+        "taxon_concepts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {"type": "integer"},
+                    "full_name": {"type":["string", "null"]},
+                    "author_year": {"type": ["string", "null"]},
+                    "rank": {"type":["string", "null"]},
+                    "name_status": {"type":["string", "null"]},
+                    "updated_at": {"type":["string", "null"], "format": "date-time"},
+                    "active": {"type": "boolean"},
+                    "cites_listing": {"type":["string", "null"]},
+                    "higher_taxa": {
+                        "type": "object",
+                        "properties": {
+                            "kingdom": {"type": ["string", "null"]},
+                            "phylum": {"type": ["string", "null"]},
+                            "class": {"type": ["string", "null"]},
+                            "order": {"type": ["string", "null"]},
+                            "family": {"type": ["string", "null"]}
+                        }
+                    },
+                    "synonyms": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {"type":["string", "null"]},
+                                "language": {"type":["string", "null"]}
+                            }
+                        }
+                    },
+                    "common_names": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {"type":["string", "null"]},
+                                "language": {"type":["string", "null"]}
+                            },
+                            "required": ["name", "language"]
+                        }
+                    },
+                    "cites_listings": {"type": "array"}
+                },
+                "required": ["id", "full_name", "rank", "name_status", "updated_at", "active", "cites_listing", "higher_taxa", "synonyms", "common_names", "cites_listings"]
+            }
+        }
+    },
+    "required": ["pagination", "taxon_concepts"]
+}

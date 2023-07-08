@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "count": {"type": "integer"},
+        "page": {"type":["string", "null"]},
+        "result": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "taxonid": {"type": "integer"},
+                    "kingdom_name": {"type":["string", "null"]},
+                    "phylum_name": {"type":["string", "null"]},
+                    "class_name": {"type":["string", "null"]},
+                    "order_name": {"type":["string", "null"]},
+                    "family_name": {"type":["string", "null"]},
+                    "genus_name": {"type":["string", "null"]},
+                    "scientific_name": {"type":["string", "null"]},
+                    "taxonomic_authority": {"type":["string", "null"]},
+                    "infra_rank": {"type": ["string", "null"]},
+                    "infra_name": {"type": ["string", "null"]},
+                    "population": {"type": ["string", "null"]},
+                    "category": {"type":["string", "null"]},
+                    "main_common_name": {"type": ["string", "null"]}
+                },
+                "required": ["taxonid", "kingdom_name", "phylum_name", "class_name", "order_name", "family_name", "genus_name", "scientific_name", "taxonomic_authority", "category"]
+            }
+        }
+    },
+    "required": ["count", "page", "result"]
+}

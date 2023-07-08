@@ -1,0 +1,42 @@
+{% extends 'base_table.html' %}
+
+{% block sidenav %}
+
+  <!-- Flash error handling -->
+  {% for message in get_flashed_messages() %}
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      {{message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% endfor %}
+  
+            <span style="font-size: 1.7vw">Raw data</span>
+            <hr>
+            <p style="font-size:1.0vw; padding-bottom: 10px; color: darkgray;">
+                A view of the first 500 enteries of the data you have supplied.
+                To add all of your data to the database, click the 'add to database' button below. 
+                Note that this will add all species from the uploaded data to the database, even if they do not match current records.
+            </p>
+            <!-- Add to database button -->
+            <form method="POST" enctype="multipart/form-data" action="/upload-display" name="checkboxes" style="padding-bottom: 20px;">
+                <button name="add" id="add" value="add" class="btn btn-primary" style="font-size:1.2vw; max-width: 100%;">Add to database</button>
+            </form>
+            <div id="unmatched" style="max-width: 100%; font-size:1.0vw;">
+            <p style="color: darkgray;">
+              Note that {{no_unmatched}} names do not match current records: 
+            </p>
+            <p style="max-height: 50vh; color: white; overflow-y: scroll; overflow-x: hidden;" >{{unmatched}}</p>
+            </div>
+
+{% endblock sidenav %}
+
+{% block table %}
+    <div class="p-0" style="position: relative; z-index: 1;">        
+        <!-- Table -->
+        <div class="p-2 flex-fill bd-highlight;" id="#table-container">
+          {% for table in tables %}
+          {{table|safe}}
+          {% endfor %}
+        </div>
+    </div>
+{% endblock table %}

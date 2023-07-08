@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<main class="container" style="margin-top: 20px; font-size:1.2vw; max-width: 90%;">
+  
+    <div class="row g-5">
+      <div class="col-md-8">
+  
+        <article class="blog-post">
+          <h2 class="blog-post-title mb-1" style="font-size:2.6vw;">Biobank Prioritisation Tool</h2>
+          <p>Prioritising species for samples collection and storage in biobanks</p>
+          <hr>
+
+          <h4 style="font-size:2vw;"> Background on the project </h4>
+          <p> Biobanks have been established to safeguard existing genetic diversity. They freeze biological animal material that can later
+          be defrosted and used to reintroduce genetic diversity into ex-situ and in-situ populations. For example, artificial insemination
+          of cryopreserved spermatozoa in the endangered black-footed ferret (Mustela nigripes) has recovered their population in-situ.
+          Unfortunately, biobanks face challenges such as high operational costs and limited funding, and must prioritise their efforts.</p>
+          
+          <h4 style="font-size:2vw;"> The tool </h4>
+          <p> This tool has been develop to help biobanks prioritise species to collect samples from. It takes into account the species conservation
+          value (IUCN Category, CITES Appendix, ED Score), the demand (requests) for samples from that species, and the number of samples already
+          present within the biobank. The tool uses the MAPISCo methodology (Defra, UK) which involves converting string data to numeric data,
+          taking the mean of invdividual scores within a category, calculating the categories z-score, applying a weight to this score, and then 
+          taking the mean of the weighted categories to produce a priority score that ranks species. <p>
+          
+          <h5 style="font-size:1.4vw;"> Limitations </h5>
+          <p> The tool is problematic with handling missing data, it assigns values of zero to missing data which artificially reduced the overall 
+            priority scores, therefore penalising species missing data.</p>
+
+          <h5 style="font-size:1.4vw;">Data Sources</h5>
+          <p>
+            <b>IUCN</b>: 
+              <a href="https://www.iucnredlist.org">
+                IUCN 2022. IUCN Red List of Threatened Species. Version 2022-2
+              </a> 
+              <i>
+                [Accessed on {{ access_date }}]
+              </i>
+          <br>
+            <b>EDGE</b>: 
+              <a href="https://doi.org/10.1371/journal.pbio.3001991">
+                The EDGE2 protocol: Advancing the prioritisation of Evolutionarily Distinct and Globally Endangered species 
+                for practical conservation action Gumbs R, Gray CL, Böhm M, Burfield IJ, Couchman OR, et al. (2023) 
+                PLOS Biology 21(2): e3001991. 
+              </a>
+          <br>
+            <b>CITES</b>: 
+              <a href="https://speciesplus.net/">
+                UNEP (2023). The Species+ Website. Nairobi, Kenya. Compiled by UNEP-WCMC, Cambridge, UK.
+              </a>
+              <i>
+                [Accessed on {{ access_date }}]
+              </i>
+          <br>
+            <b>CryoArks</b>: 
+              <a href="https://www.cryoarks.org/database/">
+                CryoArks (2019). CryoArks Database.
+              </a>
+              <i>
+                [Accessed on 05/07/2023]
+              </i>
+          </p>
+  
+      </div>
+  
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="fst-italic" style="font-size:1.8vw;">Creator</h4>
+            <p class="mb-0">This tool was created by <a href="https://www.linkedin.com/in/sarah-j-harwood/">Sarah Harwood</a> initially in R as a Shiny application, before being re-developed in Python as a Flask application.</p>
+          </div>
+  
+          <div class="p-4">
+            <h4 class="fst-italic" style="font-size:1.8vw;">CryoArks support</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="https://www.cardiff.ac.uk/obituaries/obituary/professor-mike-bruford">Michael Bruford</a></li>
+              <li><a href="https://profiles.cardiff.ac.uk/staff/costamb">Mafalda Costa</a></li>
+            </ol>
+          </div>
+  
+          <div class="p-4">
+            <h4 class="fst-italic" style="font-size:1.8vw;">Special thanks</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/DrMattG">Matthew Grainger</a></li>
+              <li><a href="https://profiles.cardiff.ac.uk/staff/merricki">Ian Merrick</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+  </main>
+
+{% endblock content %}

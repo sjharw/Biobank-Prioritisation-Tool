@@ -1,0 +1,205 @@
+{% extends 'base_table.html' %}
+
+
+{% block sidenav %}
+
+  <!-- Flash error handling -->
+  {% for message in get_flashed_messages() %}
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      {{message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% endfor %}
+
+        <span style="font-size: 2vw">Weightings</span>
+        <p style="font-size:1.0vw; margin-bottom: 0.5vh; color: darkgray;">
+          Apply a weight to each column.</p>
+        <hr>
+        <form method="POST" enctype="multipart/form-data" action="/display">
+          <div class="form-group" style="font-size:1.2vw; padding-bottom: 10px">
+            <label for="samples">Biobank samples</label>
+            <input type="numeric" class="form-control" style="font-size:1.2vw;" id="samples" name="samples" placeholder="1">
+          </div>
+          <div class="form-group" style="font-size:1.2vw; padding-bottom: 10px">
+            <label for="demand">Demand</label>
+            <input type="numeric" class="form-control" style="font-size:1.2vw;" id="demand" name="demand" placeholder="1">
+          </div>
+          <div class="form-group" style="font-size:1.2vw; padding-bottom: 10px">
+            <label for="conservation">Conservation value</label>
+            <input type="numeric" class="form-control" style="font-size:1.2vw;" id="conservation" name ="conservation" placeholder="1">
+          </div>
+          <div id="buttons" style="margin-top: 2vh;">
+            <button type="apply" id="apply" class="btn btn-primary btn-responsive" style="font-size:1.2vw; max-width: 100%;">Apply</button>
+            <button id="reset" value="REFRESH" class="btn btn-primary btn-responsive" style="font-size:1.2vw; max-width: 100%;">Reset</button>
+            <button name="download" id="download" value="download" class="btn btn-outline-primary btn-responsive" style="font-size:1.2vw; max-width: 100%;">Download</button>
+          </div>
+        </form>
+{% endblock sidenav %}
+
+{% block table %}
+    <div class="p-0" style="position: relative; z-index: 1;">        
+        <!-- Table -->
+        <div class="p-2 flex-fill bd-highlight;" id="#table-container">
+          <table id="table" class="display dataTable" style="width:100%">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>Class</th>
+                <th>Biobank samples</th>
+                <th>Demand</th>
+                <th>Conservation value</th>
+                <th>Priority score</th>
+                <th>Missing data (%)</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Full Name</th>
+                <th>Class</th>
+                <th>Biobank samples</th>
+                <th>Demand</th>
+                <th>Conservation value</th>
+                <th>Priority score</th>
+                <th>Missing data (%)</th>
+              </tr>
+          </tfoot>
+            <tbody></tbody>
+          </table>
+        </div>
+    </div>
+{% endblock table %}
+
+
+
+{% block js %}
+<script type="text/javascript" defer> // defer
+
+//----------- DataTable populate
+// Get the list from Flask app
+var class_list = {{ classes|safe }};
+
+//------------ Class dropdown filter
+var classSelected = ""
+
+$(document).ready(function () {
+       var table = $('#table').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "serverMethod": "post",
+        "paging": true,
+        "lengthMenu": [[25, 50, 100, 500, -1], [25, 50, 100, 500]],
+          "ajax": {
+              url: "/display-data",
+              type: "POST",
+              "dataType": "json",
+              "contentType":"application/json",
+              'data': function(d) { // data to send to flask route as json
+                  d.start = d.start;
+                  d.length = d.length;
+                  d.page = (d.start / d.length) + 1; // calculate current page based on start and length
+                  d.search = d.search.value;
+                  d.order = d.order;
+                  d.classSelected = classSelected
+                  return JSON.stringify(d);
+              },
+          },
+          searching: true, // allows specified columns to be searched
+          ordering: true, // allows each column to be sorted by asc/ desc
+          order: [[5, 'desc']], // set default order to order rows by priority score desc
+          pagination: true,
+          // scrollX: true, // scroll on x axis
+          "columns": [
+              {"data": "full_name", "searchable": true, "orderable": true},
+              {"data": "class", "searchable": false, "orderable": true},
+              {"data": "biobank_samples", "searchable": false, "orderable": true},
+              {"data": "demand", "searchable": false, "orderable": true},
+              {"data": "conservation_value", "searchable": false, "orderable": true},
+              {"data": "priority_score", "searchable": false, "orderable": true},
+              {
+                "data": "null_percent",
+                render: DataTable.render.percentBar('square','#000000', '#2286aa', '#2286aa', '#ffffff', 0, 'solid') // colours: text, outline, bar, background
+            }
+          ]
+      });
+      // Add besppke class dropdown to datatable
+      var dtfilters = document.getElementById('table_length'); // get datatable length menu dropdown
+      var dropdownDiv = document.createElement('label');
+      dropdownDiv.className = "dropdown";
+      dropdownDiv.style.display = 'relative';
+      dropdownDiv.style.margin = "0 0 0 30vw"
+      dropdownDiv.innerHTML = '<button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Class</button><ul class="dropdown-menu" style="padding: 0px; margin: 0px; overflow: scroll;  max-height: 20vh;" id="dropdown-menu" name="classes"></ul>'
+      dtfilters.appendChild(dropdownDiv); // add bespoke dropdown to length menu dropdown div
+      var dropdownMenu = document.getElementById("dropdown-menu");
+      // For each class provided from/display route
+      // add class to dropdown li element
+      class_list.forEach(function(item) {
+        var li = document.createElement("li");
+        li.id = item;
+        li.className = "classname"
+        var a = document.createElement("a");
+        a.classList.add("dropdown-item");
+        a.textContent = item;
+        a.innerText = item;
+        li.appendChild(a);
+        dropdownMenu.appendChild(li);
+      });
+      //  When class is clicked in dropdown, send chosen class to AJAX datatable
+      const options = dropdownMenu.querySelectorAll("li");
+      options.forEach((option) => {
+        option.addEventListener("click", (event) => {
+          classSelected = event.target.textContent;
+          table.ajax.reload(null, false); // reload table with new class values
+        });
+      });
+});
+
+//------------ Weights sidenav
+
+function storeBar(barname){
+  // This function stores the input from a input bar
+  // in the session storage
+  var barval = document.getElementById(barname).value
+  if (window.sessionStorage.getItem(barname) === null){
+      window.sessionStorage.setItem(barname, barval)
+    } else {
+      window.sessionStorage.removeItem(barname);
+      window.sessionStorage.setItem(barname, barval)
+  }
+}
+
+function reapplyBar(barname){
+  // This function reapplies the input bar values 
+  // stored in session storage
+  var bar = document.getElementById(barname)
+  var sess = window.sessionStorage.getItem(barname);
+  bar.value = sess
+}
+
+function resetSession(barname){
+  if (window.sessionStorage.getItem(barname) !== null){
+      window.sessionStorage.removeItem(barname);
+      window.sessionStorage.setItem(barname, "1")
+  }
+}
+
+// input bars input ids
+barArray = ["conservation", "samples", "demand"]
+
+// store values in input bars in session storage
+document.getElementById("apply").addEventListener("click", ()=> {
+  barArray.forEach(item =>storeBar(item));
+})
+
+// reapplies stored session values for input bars
+barArray.forEach(item =>reapplyBar(item));
+
+// resets input values in input bar when 'reset' button clicked
+document.getElementById("reset").addEventListener("click", ()=> {
+  // reset session to input bar value = "1"
+  barArray.forEach(item =>resetSession(item));
+  // reapply the reset session
+  barArray.forEach(item =>reapplyBar(item));
+})
+
+</script>
+{% endblock js %}

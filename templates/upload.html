@@ -1,0 +1,58 @@
+{% extends 'base_table.html' %}
+{% for message in get_flashed_messages() %}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{message}}
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+    {% block sidenav %}
+    
+            <!-- Alert message -->
+            {% for message in get_flashed_messages() %}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{message}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+
+            <span style="font-size: 1.7vw">Upload biobank data</span>
+            <p style="font-size:1.0vw; color: darkgray;">
+                Only CSV files are supported.
+            </p>
+            <form method="POST" enctype="multipart/form-data" action="/upload-display">
+                <hr style="margin: 0px 0px 20px 0px">
+
+                <!-- Choose file -->
+                <p style="font-size:1.0vw; color: darkgray; padding-top: 0.5vh">
+                    Upload a CSV of biobank data to replace CryoArks biobank data with your own biobank data.
+                </p>
+                <div style="font-size:1.2vw; padding-bottom: 2vw;">
+                    <input type="file" id="myFile" name="file">
+                </div>
+
+                <!-- Supply column name -->
+                <p style="font-size:1.0vw; color: darkgray;">
+                    Please supply the name of the column containing the <b>species names</b>. If no entry is supplied, it defaults to 'full_name'.</p>
+                <div>
+                    <input type="text" class="form-control" placeholder="full_name" name="speciesColumn" style="font-size:1.2vw; width: 90%">
+                </div>
+                <br>
+                <p style="font-size:1.0vw; color: darkgray;">
+                    Please supply the name of the column containing the <b>class</b> of each species. If no entry is supplied, it defaults to 'class'.</p>
+                <div>
+                    <input type="text" class="form-control" placeholder="class" name="classColumn" style="font-size:1.2vw; width: 90%">
+                </div>
+                <br>
+                <p style="font-size:1.0vw; color: darkgray;">
+                    Please supply the name of the column containing the <b>count of samples</b> for each individual species. If no entry is supplied, it defaults to 'biobank_samples'.</p>
+                <div>
+                    <input type="text" class="form-control" placeholder="biobank_samples" name="sampleColumn" style="font-size:1.2vw; width: 90%">
+                </div>
+
+                 <!-- Submit button -->
+                <div class="d-flex flex-row upload" id="submit-btn" style="padding-top: 30px; margin: auto; width: 50%;">
+                    <button class="btn btn-primary" type="submit" name="submit" id="submit" value="submit" style="font-size:1.2vw; max-width: 100%;">Submit</button>
+                </div>
+
+            </form>
+    {% endblock sidenav %}
