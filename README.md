@@ -1,4 +1,4 @@
-# Prioritization-Tool
+# Biobank-Prioritisation-Tool
 
 The mission of this project is to provide a tool that enables biobanks to enhance the diversity and availability of zoological samples for conservation and research.
 
@@ -37,7 +37,7 @@ This issue is due to be addressed in later versions of the tool.
 Please note that this application is still in development and may therefore throw up bugs and unexpected errors.
 
 ### About the developer
-Sarah is a Data Engineer with a background in genetics and conservation biology. She was introduced into the world of biobanking when she met [Mike Bruford](https://www.cardiff.ac.uk/people/view/81128-bruford-mike) who offered her a placement year with [The Frozen Ark](https://www.frozenark.org/). During this time, Sarah upskilled in Data Engineering in R & SQL. Since her placement year she has worked with various technologies, including R, SQL, Python, PySpark, Neo4j, ArangoDB, and Azure. Using her newfound skills, Sarah has volunteered with CryoArks to re-develop the Prioritisation Tool as a Python Flask application to practice Python Software Development and produce a useful tool that can be used by biobanks. This is her first full-stack application and it is in ongoing development.
+[Sarah](https://www.linkedin.com/in/sarah-j-harwood) is a Data Engineer with a background in genetics and conservation biology. She was introduced into the world of biobanking when she met [Mike Bruford](https://www.cardiff.ac.uk/people/view/81128-bruford-mike) who offered her a placement year with [The Frozen Ark](https://www.frozenark.org/). During this time, Sarah upskilled in Data Engineering in R & SQL. Since her placement year she has worked with various technologies, including R, SQL, Python, PySpark, Neo4j, ArangoDB, and Azure. Using her newfound skills, Sarah has volunteered with CryoArks to re-develop the Prioritisation Tool as a Python Flask application to practice Python Software Development and produce a useful tool that can be used by biobanks. This is her first full-stack application and it is in ongoing development.
 
 ### About the datasources
 
@@ -323,7 +323,7 @@ Method for the Assesment of Priorities for International Species Conservation (M
 </a>
 
 ## Credits
-This tool was built soley by [@sjharw](https://github.com/sjharw)
+This tool was built soley by [Sarah Harwood](https://www.linkedin.com/in/sarah-j-harwood) [@sjharw](https://github.com/sjharw)
 
 ## License
 This app is published under a General Public License (GPL) v2.0. Please reference the original author of this tool [@sjharw](https://github.com/sjharw) in any derivative/ modified/ copied versions of this work.
