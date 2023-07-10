@@ -23,11 +23,8 @@ Species with high conservation value and demand will score higher,
 and species with more samples in a biobank will score lower. 
 These category scores are used to calculate a priority score for each species which can be used to rank the species.
 
-The [MAPISCo methodology](https://github.com/DrMattG/MAPISCo) is used to generate the priority scores. 
-This method involves converting any string data to a numeric form,
-taking the mean of invdividual scores within a category, 
-calculating the categories z-score, applying a weight to this score, 
-and then taking the mean of the weighted categories to produce a priority score that ranks species.
+The projects adopts an alterated version of the [MAPISCo methodology](https://github.com/DrMattG/MAPISCo) to generate the priority scores.
+The method involves converting any string data to a numeric form, normalising the individual dataset scores by diving/ inverting by the maximum, combining the datasets into their corresponding category by taking their mean, applying a weight to this category, and then taking the mean of the weighted categories to produce a priority score that ranks species.
 
 The tool is currently problematic with handling missing data, 
 it assigns values of zero to missing data which artificially reduces the overall priority scores, 
