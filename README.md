@@ -148,6 +148,7 @@ and copy and paste the sqlite3 files into your Conda environments DLLs folder.
 ### Note to developers
 This project is still under development and may have some teething issues. 
 If you run into a bug, please let me know and I will look into fixing it.
+Direct edits or pushes to the main branch in this repository are not permitted. Please contact the [author](https://www.linkedin.com/in/sarah-j-harwood) of the tool if you want to collaborate.
 
 
 ## Project structure
