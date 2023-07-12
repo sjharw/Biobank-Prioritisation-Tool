@@ -29,7 +29,7 @@ def db_conn(driver, server, database, username: str = "", password: str = ""):
     try:
         with engine.connect() as con:
             con.execute("SELECT 1")
-        print("engine is valid")
+        print("SQL engine is valid")
     except Exception as e:
-        print(f"Engine invalid: {str(e)}")
+        print(f"SQL engine invalid: {str(e)}")
     return engine

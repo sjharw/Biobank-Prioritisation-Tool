@@ -207,3 +207,5 @@ edge_df = edge_df[['rl_id', 'family', 'full_name', 'ed_median', 'class']]
 
 # Save
 edge_df.to_parquet(TEMP_DIR + "edge.parquet")
+
+print("All dataframes successfully created")
