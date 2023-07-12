@@ -161,6 +161,8 @@ def display():
                 ),
                 [biobank_data[["full_name", "class", "biobank_samples"]], data],
             ).drop_duplicates()
+    # assign species with no biobank_samples a value of 1
+    data["biobank_samples"].fillna(1, inplace=True)
     
     # enforce float type
     cols = [col for col in data.columns if col not in ["full_name", "class"]]

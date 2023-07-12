@@ -19,8 +19,9 @@ be defrosted and used to reintroduce genetic diversity into ex-situ and in-situ 
 This tool takes into account the species **conservation value** (IUCN Category, CITES Appendix, and EDGE Score), 
 the **demand** (requests) for samples from that species, 
 and the number of **samples** already present within the biobank. 
-Species with high conservation value and demand will score higher, 
-and species with more samples in a biobank will score lower. 
+Species with high conservation value will have higher priority scores because they have greater risk of extinction and greater evolutionary distinctiveness.
+The same goes for species with higher demand for samples.
+Species with fewer samples in biobanks receive higher scores than those with greater numbers of samples in storage, as a lack of samples pose greater risk of losing that species genetic information.
 These category scores are used to calculate a priority score for each species which can be used to rank the species.
 
 The projects adopts an alterated version of the [MAPISCo methodology](https://github.com/DrMattG/MAPISCo) to generate the priority scores.
