@@ -83,3 +83,5 @@ validate_json_schema(json_pages_list[1], iucn_schema)
 # Save response data to temp folder
 with open(ROOT + "/temp/iucn_response.json", "w") as file:
     json.dump(json_pages_list, file)
+
+print("All API data successfully retrieved")

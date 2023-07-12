@@ -19,8 +19,9 @@ be defrosted and used to reintroduce genetic diversity into ex-situ and in-situ 
 This tool takes into account the species **conservation value** (IUCN Category, CITES Appendix, and EDGE Score), 
 the **demand** (requests) for samples from that species, 
 and the number of **samples** already present within the biobank. 
-Species with high conservation value and demand will score higher, 
-and species with more samples in a biobank will score lower. 
+Species with high conservation value will have higher priority scores because they have greater risk of extinction and greater evolutionary distinctiveness.
+The same goes for species with higher demand for samples.
+Species with fewer samples in biobanks receive higher scores than those with greater numbers of samples in storage, as a lack of samples pose greater risk of losing that species genetic information.
 These category scores are used to calculate a priority score for each species which can be used to rank the species.
 
 The projects adopts an alterated version of the [MAPISCo methodology](https://github.com/DrMattG/MAPISCo) to generate the priority scores.
@@ -34,7 +35,7 @@ This issue is due to be addressed in later versions of the tool.
 Please note that this application is still in development and may therefore throw up bugs and unexpected errors.
 
 ### About the developer
-[Sarah](https://www.linkedin.com/in/sarah-j-harwood) is a Data Engineer with a background in genetics and conservation biology. She was introduced into the world of biobanking when she met [Mike Bruford](https://www.cardiff.ac.uk/people/view/81128-bruford-mike) who offered her a placement year with [The Frozen Ark](https://www.frozenark.org/). During this time, Sarah upskilled in Data Engineering in R & SQL. Since her placement year she has worked with various technologies, including R, SQL, Python, PySpark, Neo4j, ArangoDB, and Azure. Using her newfound skills, Sarah has volunteered with CryoArks to re-develop the Prioritisation Tool as a Python Flask application to practice Python Software Development and produce a useful tool that can be used by biobanks. This is her first full-stack application and it is in ongoing development.
+[Sarah](https://www.linkedin.com/in/sarah-j-harwood) is a Data Engineer with a background in genetics and conservation biology. She was introduced into the world of biobanking when she met [Mike Bruford](https://www.cardiff.ac.uk/people/view/81128-bruford-mike) who offered her a placement year with [The Frozen Ark](https://www.frozenark.org/). During this time, Sarah upskilled in Data Engineering in R & SQL. Since her placement year she has worked with various technologies, including Python, PySpark, Neo4j, ArangoDB, and Azure. Using her newfound skills, Sarah has volunteered with CryoArks to re-develop the Prioritisation Tool as a Python Flask application to practice Python Software Development and produce a useful tool that can be used by biobanks. This is her first full-stack application and it is in ongoing development.
 
 ### About the datasources
 
@@ -114,10 +115,12 @@ EDGE data is provided in this tool within the <i>/datasets</i> folder. You can r
 
 CryoArk data is also provided within the <i>/datasets</i> folder. You can uplaod the CryoArks data through the upload page to add their biobank data to the tool.
 
-**Setup SQL database**
+**Setup SQL database (optional)**
 <br>
-The tool uses an SQL database to store the IUCN, EDGE, and CITES data. You will need to manually setup an SQL database on your device by running the following SQL query `CREATE DATABASE prioritydb`. I'd recommend using [Microsoft SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms?view=sql-server-ver16#previous-ssms-releases) to setup your SQL database.
+The application provides the user an option to store the datasource data (IUCN, EDGE, and CITES) in an SQL database. If you want to use SQL, you will need to manually setup an SQL database on your device by running the following SQL query `CREATE DATABASE prioritydb`. I'd recommend using [Microsoft SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms?view=sql-server-ver16#previous-ssms-releases) to setup your SQL database.
 Note down the name of the database, as well as the server name, and any username or password that is required to login into SQL. You will need this information when you install the app.
+
+Please note that setting up an SQL database is optional and not a requirement for the application to run. Users can opt out of using SQL, this would suit use cases where the app is used in isolation and the user doesn't require frequent access to datasource data (IUCN, CITES, EDGE).
 
 ### Download
 Download the code by clicking the green 'code' button top right of the README, then clicking 'download zip'. Unzip the downloaded folder and move it to an appropriate location in your device.
@@ -125,13 +128,13 @@ Download the code by clicking the green 'code' button top right of the README, t
 ### Installation
 
 To setup the application, change to the directory of the app `cd C:/path/to/Prioritization-Tool` and excecute `install.bat` in the Anaconda Prompt, 
-this will prompt you for your SQL and API details. If you dont require a username or password to connect to SQL then pass an empty string `""` as an argument to the Anaconda Prompt.
+this will prompt you for your API details and give you the option to upload the data to an SQL database. If you choose to upload the data to SQL but you dont require a username or password to connect to SQL then pass an empty string `""` as an argument to the Anaconda Prompt when prompted for your SQL details.
 The `install.bat` file does the following:
 - Sets up a Conda environment called `priority-env` using `environment.yml` that contains all the packages and dependencies required for the app to run
 - Generates `config.ini` file by running `config_setup.py` that contains the private Flask, SQL, and API information that you supply via the Conda prompt, as well as paths to folders within the application
-- Runs the *.py files in /database_setup folder which generates the data required for the project
+- Runs certain files in /database_setup folder to generate the data required for the project
 
-The installation can take some time as Anaconda needs to download all packages and dependencies, make the API calls, and upload the data into SQL.
+The installation can take some time as Anaconda needs to download all packages and dependencies, make the API calls, and optionally, upload the data into SQL.
 
 If, for any reason, you need to install additional pip packages, navigate to the 
 Anaconda prompt, change to the project directory `cd path/to/Prioritization-Tool`, activate the conda enviroment `activate priority-env` and install the named package with `python -m pip install package_name`
@@ -267,7 +270,7 @@ The /datasets folder contains the CryoArks dataset and EDGE 2023 dataset.
 The /downloaded folder is where downloads from the application are saved to.
 
 ## Future development
-This project is in ongoing development. The current version has been developed on the request to have the data in SQL for frequent access and use in other projects. There is scope in future versions to remove the use of an SQL database for those who use the app in isolation.
+This project is in ongoing development. The previous version was developed on the request to have the data in SQL for frequent access and use in other projects. This current version allows user to specify if they want to use an optional SQL database to store the data.
 
 There are some areas I am planning to work on in future editions:
 - Replacing fake demand scores with real demand/ request data

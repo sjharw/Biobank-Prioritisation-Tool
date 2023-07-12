@@ -46,3 +46,5 @@ for col in metacols:
 
 # save scored/ scaled data
 data.to_parquet(TEMP_DIR + "scored_dataset.parquet")
+
+print("Scored dataset successfully created")

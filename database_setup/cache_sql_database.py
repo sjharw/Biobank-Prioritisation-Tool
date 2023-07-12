@@ -58,3 +58,5 @@ merged_df = merged_df.groupby('full_name').first().sort_values("full_name").rese
 
 
 merged_df.to_parquet(TEMP_DIR + "entire_dataset.parquet", engine="fastparquet")
+
+print("SQL database successfully cached")
