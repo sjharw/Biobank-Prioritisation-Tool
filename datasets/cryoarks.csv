@@ -36,8 +36,7 @@ Aedes,1,Insecta
 Aelia acuminata,7,Insecta
 Aepyceros melampus,1,Mammalia
 Aepypodius megapode,1,Aves
-Aepyprymnus rufescens,12,Mammalia
-Aepyprymnus rufescens,2,Mammalia
+Aepyprymnus rufescens,14,Mammalia
 Aethomys chrysophilus,1,Mammalia
 Aethomys namaquensis,4,Mammalia
 Afropavo congensis,7,Aves
@@ -162,8 +161,7 @@ Aphthona,1,Insecta
 Aphthona euphorbiae,1,Insecta
 Aphthona nonstriata,1,Insecta
 Apoda limacodes,1,Insecta
-Apodemus sylvaticus,7,Mammalia
-Apodemus sylvaticus,1,Mammalia
+Apodemus sylvaticus,8,Mammalia
 Aponuphis bilineata,2,Polychaeta
 Aporophyla australis,1,Insecta
 Aporophyla lueneburgensis,1,Insecta
@@ -262,8 +260,7 @@ Bibio johannis,2,Insecta
 Bibio varipes,1,Insecta
 Bimastos eiseni,1,Clitellata
 Bimastos rubidus,11,Clitellata
-Bison bonasus,4,Mammalia
-Bison bonasus,50,Mammalia
+Bison bonasus,54,Mammalia
 Biston strataria,1,Insecta
 Bithia spreta,1,Insecta
 Bitoma crenata,1,Insecta
@@ -280,8 +277,7 @@ Bombus terrestris,3,Insecta
 Bombycilla garrulus,56,Aves
 Boreus hyemalis,2,Insecta
 Borostomias elucens,4,Actinopterygii
-Bos grunniens,18,Mammalia
-Bos grunniens,15,Mammalia
+Bos grunniens,33,Mammalia
 Bos taurus,37,Mammalia
 Boselaphus tragocamelus,1,Mammalia
 Botaurus stellaris,1,Aves
@@ -319,8 +315,7 @@ Buteo buteo,10,Aves
 Buteo jamaicensis,1,Aves
 Byturus ochraceus,1,Insecta
 Cacatua,1,Aves
-Cacatua ducorpsi,4,Aves
-Cacatua ducorpsi,4,Aves
+Cacatua ducorpsi,8,Aves
 Cacopsylla fulguralis,2,Insecta
 Caenis luctuosa,1,Insecta
 Caenoplana variegata,3,Rhabditophora
@@ -336,8 +331,7 @@ Callimico goeldii,32,Mammalia
 Callipallene brevirostris,1,Pycnogonida
 Calliphora vomitoria,2,Insecta
 Callithrix geoffroyi,56,Mammalia
-Callithrix jacchus,11,Mammalia
-Callithrix jacchus,52,Mammalia
+Callithrix jacchus,63,Mammalia
 Callitula bicolor,3,Insecta
 Callomyia amoena,1,Insecta
 Callopora lineata,1,Gymnolaemata
@@ -387,16 +381,14 @@ Cartodere bifasciata,1,Insecta
 Cassida vibex,1,Insecta
 Castor,3,Mammalia
 Castor canadensis,3,Mammalia
-Castor fiber,2,Mammalia
-Castor fiber,40,Mammalia
+Castor fiber,42,Mammalia
 Casuarius casuarius,4,Aves
 Cathartes aura,3,Aves
 Catopuma badia,1,Mammalia
 Catopuma temminckii,6,Mammalia
 Catopuma temminckii temminckii,1,Mammalia
 Cavia aperea,1,Mammalia
-Cavia porcellus,12,Mammalia
-Cavia porcellus,2,Mammalia
+Cavia porcellus,14,Mammalia
 Cebuella polykomos polykomus,2,Mammalia
 Cebuella pygmaea,23,Mammalia
 Cebuella pygmaea niveiventris,6,Mammalia
@@ -423,8 +415,7 @@ Cercopithecus hamlyni,2,Mammalia
 Cercopithecus hamlyni hamlyni,3,Mammalia
 Cercopithecus kandti,4,Mammalia
 Cercopithecus mitis,2,Mammalia
-Cercopithecus neglectus,2,Mammalia
-Cercopithecus neglectus,6,Mammalia
+Cercopithecus neglectus,8,Mammalia
 Cercopithecus pygerythrus,1,Mammalia
 Cereopsis novaehollandiae,1,Aves
 Cerianthus lloydii,2,Anthozoa
@@ -465,14 +456,12 @@ Chiroteuthis joubini,3,Cephalopoda
 Chlamydotis macqueeni,1,Aves
 Chloephaga rubidiceps,1,Aves
 Chloris chloris,10,Aves
-Chlorocebus aethiops,5,Mammalia
-Chlorocebus aethiops,2,Mammalia
+Chlorocebus aethiops,7,Mammalia
 Chloromyia formosa,1,Insecta
 Chloroperla tripunctata,2,Insecta
 Choeropsis liberiensis,4,Mammalia
 Choeropsis liberiensis liberiensis,6,Mammalia
-Choloepus didactylus,18,Mammalia
-Choloepus didactylus,4,Mammalia
+Choloepus didactylus,22,Mammalia
 Choneiulus crassicornis,1,Diplopoda
 Choneiulus palmatus,6,Diplopoda
 Choneiulus pyralina,1,Diplopoda
@@ -570,8 +559,7 @@ Crepidodera aurata,1,Insecta
 Crepidodera aurea,1,Insecta
 Crepidodera fulvicornis,1,Insecta
 Crex crex,5,Aves
-Cricetomys gambianus,4,Mammalia
-Cricetomys gambianus,2,Mammalia
+Cricetomys gambianus,6,Mammalia
 Cricetulus griseus,14,Mammalia
 Cricetulus migratorius,6,Mammalia
 Cricetus cricetus,2,Mammalia
@@ -614,8 +602,7 @@ Cydia amplana,1,Insecta
 Cydia nigricana,1,Insecta
 Cydia splendana,1,Insecta
 Cygnus buccinator,1,Aves
-Cygnus cygnus,70,Aves
-Cygnus cygnus,5,Aves
+Cygnus cygnus,75,Aves
 Cygnus melanocoryphus,1,Aves
 Cygnus melanocoryphys,1,Aves
 Cygnus olor,2,Aves
@@ -680,8 +667,7 @@ Dichonia aprilina,1,Insecta
 Dicranocephalus agilis,3,Insecta
 Dicranomyia morio,1,Insecta
 Dicrostonyx Dicrostonyx,1,Mammalia
-Dicrostonyx torquatus,8,Mammalia
-Dicrostonyx torquatus,7,Mammalia
+Dicrostonyx torquatus,15,Mammalia
 Dictyna arundinacea,1,Arachnida
 Dictyna civica,3,Arachnida
 Dicycla oo,1,Insecta
@@ -762,8 +748,7 @@ Epinotia ramella,4,Insecta
 Epione repandaria,1,Insecta
 Epistrophe grossulariae,1,Insecta
 Epitrix atropae,7,Insecta
-Equus asinus,10,Mammalia
-Equus asinus,1,Mammalia
+Equus asinus,11,Mammalia
 Equus burchelli,9,Mammalia
 Equus caballus,33,Mammalia
 Equus caballus przewalskii,38,Mammalia
@@ -783,8 +768,7 @@ Erethizon dorsatum,5,Mammalia
 Ericthonius,1,Malacostraca
 Eridolius romani,1,Insecta
 Erigone,10,Arachnida
-Erinaceus europaeus,5,Mammalia
-Erinaceus europaeus,11,Mammalia
+Erinaceus europaeus,16,Mammalia
 Eriocrania subpurpurella,1,Insecta
 Eriothrix rufomaculata,4,Insecta
 Eristalinus sepulchralis,1,Insecta
@@ -819,8 +803,7 @@ Eulemur fulvus,4,Mammalia
 Eulemur fulvus collaris,2,Mammalia
 Eulemur fulvus mayottensis,1,Mammalia
 Eulemur fulvus sanfordi,1,Mammalia
-Eulemur macaco,1,Mammalia
-Eulemur macaco,4,Mammalia
+Eulemur macaco,5,Mammalia
 Eulemur rubriventer,2,Mammalia
 Eulemur rufifrons,1,Mammalia
 Eulithis testata,5,Insecta
@@ -852,8 +835,7 @@ Falco peregrinus,9,Aves
 Falco punctatus,1,Aves
 Falco tinnunculus,3,Aves
 Felis,1,Mammalia
-Felis catus,24,Mammalia
-Felis catus,34,Mammalia
+Felis catus,58,Mammalia
 Felis chaus,12,Mammalia
 Felis margarita,5,Mammalia
 Felis margarita harrisoni,11,Mammalia
@@ -877,8 +859,7 @@ Fukomys molerat,1,Mammalia
 Fulmarus glacialis,4,Aves
 Gabrius splendidulus,1,Insecta
 Gadella imberbis,1,Actinopterygii
-Galago senegalensis,7,Mammalia
-Galago senegalensis,5,Mammalia
+Galago senegalensis,12,Mammalia
 Galagoides demidoff,1,Mammalia
 Galathea squamifera,3,Malacostraca
 Galiteuthis armata,1,Cephalopoda
@@ -961,8 +942,7 @@ Gymnobelideus leadbeateri,3,Mammalia
 Gymnocheta viridis,1,Insecta
 Gymnosoma rotundatum,1,Insecta
 Gyps coprotheres,1,Aves
-Gyps fulvus,9,Aves
-Gyps fulvus,1,Aves
+Gyps fulvus,10,Aves
 Gypsonoma sociana,1,Insecta
 Gyrinus substriatus,2,Insecta
 Habrophlebia fusca,2,Insecta
@@ -1015,8 +995,7 @@ Herina nigrina,1,Insecta
 Hermaeophaga mercurialis,1,Insecta
 Herpailurus yagouaroundi,4,Mammalia
 Hesperocorixa sahlbergi,1,Insecta
-Heterocephalus glaber,10,Mammalia
-Heterocephalus glaber,1,Mammalia
+Heterocephalus glaber,11,Mammalia
 Heterogamus dispar,2,Insecta
 Hierophis viridiflavus,7,Reptilia
 Himacerus apterus,1,Insecta
@@ -1049,8 +1028,7 @@ Hydroides norvegica,1,Polychaeta
 Hydromys chrysogaster,1,Mammalia
 Hydroporus obscurus,1,Insecta
 Hydroporus pubescens,1,Insecta
-Hydropotes inermis,6,Mammalia
-Hydropotes inermis,9,Mammalia
+Hydropotes inermis,15,Mammalia
 Hydropsyche angustipennis,2,Insecta
 Hydropsyche contubernalis,1,Insecta
 Hydrosaurus,1,Reptilia
@@ -1059,8 +1037,7 @@ Hyledelphax elegantula,2,Insecta
 Hylobates,1,Mammalia
 Hylobates agilis,1,Mammalia
 Hylobates klossii,1,Mammalia
-Hylobates lar,5,Mammalia
-Hylobates lar,11,Mammalia
+Hylobates lar,16,Mammalia
 Hylobates lar entelloides,1,Mammalia
 Hylobates lar lar,1,Mammalia
 Hylobates leucogenys,3,Mammalia
@@ -1239,8 +1216,7 @@ Lophura diardi,1,Aves
 Lophura edwardsi,1,Aves
 Loxia,5,Aves
 Loxia scotica,1,Aves
-Loxodonta africana,6,Mammalia
-Loxodonta africana,1,Mammalia
+Loxodonta africana,7,Mammalia
 Lucilia caesar,1,Insecta
 Lumbricus castaneus,1,Clitellata
 Lumbricus rubellus,3,Clitellata
@@ -1265,10 +1241,8 @@ Lysibia nanus,1,Insecta
 Lysilla loveni,1,Polychaeta
 Macaca arctoides,11,Mammalia
 Macaca fuscata,6,Mammalia
-Macaca mulatta,3,Mammalia
-Macaca mulatta,2,Mammalia
-Macaca nemestrina,2,Mammalia
-Macaca nemestrina,2,Mammalia
+Macaca mulatta,5,Mammalia
+Macaca nemestrina,4,Mammalia
 Macaca nigra,8,Mammalia
 Macaca siberu,3,Mammalia
 Macaca silenus,6,Mammalia
@@ -1301,10 +1275,8 @@ Mangora acalypha,3,Arachnida
 Mareca,3,Aves
 Marmaronetta angustirostris,1,Aves
 Marmosops incanus,2,Mammalia
-Martes foina,4,Mammalia
-Martes foina,5,Mammalia
-Martes martes,8,Mammalia
-Martes martes,45,Mammalia
+Martes foina,9,Mammalia
+Martes martes,53,Mammalia
 Mastigoteuthis sp.,21,Cephalopoda
 Mastomys erythroleucus,5,Mammalia
 Maxomys surifer,3,Mammalia
@@ -1347,8 +1319,7 @@ Mesochorus laricis,1,Insecta
 Mesoligia furuncula,1,Insecta
 Mesopsocus fuscifrons,1,Insecta
 Meta bourneti,2,Arachnida
-Metachirus nudicaudatus,1,Mammalia
-Metachirus nudicaudatus,2,Mammalia
+Metachirus nudicaudatus,3,Mammalia
 Metalampra italica,1,Insecta
 Metatropis rufescens,1,Insecta
 Metellina segmentata,2,Arachnida
@@ -1361,8 +1332,7 @@ Microcebus murinus,1,Mammalia
 Microcebus murinus smithii,1,Mammalia
 Microgale cowani,17,Mammalia
 Micronecta scholtzi,1,Insecta
-Microtus agrestis,19,Mammalia
-Microtus agrestis,2,Mammalia
+Microtus agrestis,21,Mammalia
 Microtus arvalis,7,Mammalia
 Microtus levis,4,Mammalia
 Milichia ludens,2,Insecta
@@ -1385,8 +1355,7 @@ Mungotictis decemlineata,1,Mammalia
 Munida rugosa,2,Malacostraca
 Muntiacus feae,1,Mammalia
 Muntiacus muntjak vaginalis,8,Mammalia
-Muntiacus reevesi,18,Mammalia
-Muntiacus reevesi,12,Mammalia
+Muntiacus reevesi,30,Mammalia
 Mus indutus,1,Mammalia
 Mus minutoides,5,Mammalia
 Mus musculus castaneus,1,Mammalia
@@ -1394,13 +1363,11 @@ Musca autumnalis,1,Insecta
 Muscicapa striata,2,Aves
 Musophaga violacea,3,Aves
 Mustela,4,Mammalia
-Mustela erminea,3,Mammalia
-Mustela erminea,21,Mammalia
+Mustela erminea,24,Mammalia
 Mustela furo,3,Mammalia
 Mustela lutreola,7,Mammalia
 Mustela nivalis,16,Mammalia
-Mustela putorius,1,Mammalia
-Mustela putorius,67,Mammalia
+Mustela putorius,68,Mammalia
 Mustela sibirica,1,Mammalia
 Mustela vison,2,Mammalia
 Mycteria leucocephala,5,Aves
@@ -1408,8 +1375,7 @@ Myennis octopunctata,1,Insecta
 Myiopsitta monachus,3,Aves
 Mynah,1,Aves
 Myocastor coypus,5,Mammalia
-Myodes glareolus,4,Mammalia
-Myodes glareolus,1,Mammalia
+Myodes glareolus,5,Mammalia
 Myopa tessellatipennis,2,Insecta
 Myoprocta,1,Mammalia
 Myotis myotis,2,Mammalia
@@ -1475,8 +1441,7 @@ Nezara viridula,1,Insecta
 Nicrophorus investigator,1,Insecta
 Nolella dilatata,1,Gymnolaemata
 Nomascus concolor,1,Mammalia
-Nomascus leucogenys,7,Mammalia
-Nomascus leucogenys,4,Mammalia
+Nomascus leucogenys,11,Mammalia
 Nomophila noctuella,1,Insecta
 Notamacropus agilis,2,Mammalia
 Notamacropus eugenii,5,Mammalia
@@ -1492,20 +1457,17 @@ Numenius,1,Aves
 Numenius arquata,4,Aves
 Numenius phaeopus,1,Aves
 Nyctalus noctula,3,Mammalia
-Nyctereutes procyonoides,2,Mammalia
-Nyctereutes procyonoides,3,Mammalia
+Nyctereutes procyonoides,5,Mammalia
 Nyctereutes procyonoides procyonoides,9,Mammalia
 Nyctereutes procyonoides viverrinus,2,Mammalia
 Nyctia halterata,1,Insecta
 Nycticebus bengalensis,1,Mammalia
-Nycticebus coucang,4,Mammalia
-Nycticebus coucang,3,Mammalia
+Nycticebus coucang,7,Mammalia
 Nycticebus pygmaeus,8,Mammalia
 Nycticorax nycticorax,7,Aves
 Nymphon gracile,1,Pycnogonida
 Ochina ptinoides,1,Insecta
-Octodon degus,3,Mammalia
-Octodon degus,1,Mammalia
+Octodon degus,4,Mammalia
 Octodon octodon,1,Mammalia
 Octolasion cyaneum,1,Clitellata
 Octolasion lacteum,1,Clitellata
@@ -1517,8 +1479,7 @@ Odiellus spinosus,3,Arachnida
 Oecobius navus,4,Arachnida
 Oegoconia quadripuncta,2,Insecta
 Oenanthe oenanthe,2,Aves
-Okapia johnstoni,10,Mammalia
-Okapia johnstoni,6,Mammalia
+Okapia johnstoni,16,Mammalia
 Oligia latruncula,2,Insecta
 Oligia strigilis,2,Insecta
 Oligoryzomys moojeni,4,Mammalia
@@ -1550,13 +1511,11 @@ Orchestia gammarellus,4,Malacostraca
 Orcinus orca,1,Mammalia
 Oreochromis niloticus,3,Actinopterygii
 Oritoniscus flavus,5,Malacostraca
-Ornithorhynchus anatinus,84,Mammalia
-Ornithorhynchus anatinus,2,Mammalia
+Ornithorhynchus anatinus,86,Mammalia
 Orthetrum coerulescens,1,Insecta
 Orthocentrus castellanus,1,Insecta
 Orthosia cerasi,1,Insecta
-Orycteropus afer,4,Mammalia
-Orycteropus afer,15,Mammalia
+Orycteropus afer,19,Mammalia
 Oryctolagus cuniculus,15,Mammalia
 Oryx,2,Mammalia
 Oryx dammah,1,Mammalia
@@ -1575,8 +1534,8 @@ Otiorhynchus sulcatus,1,Insecta
 Otis tarda,1,Aves
 Otocolobus manul,21,Mammalia
 Otocyon megalotis,6,Mammalia
-Otodistomum cestoides,3,Cestoda
-Otodistomum cestoides,3,Gastropoda
+Otodistomum cestoides,6,Cestoda
+Otodistomum cestoides,6,Gastropoda
 Otolemur,1,Mammalia
 Oulema obscura,1,Insecta
 Ovibos Moschatus,10,Mammalia
@@ -1595,8 +1554,7 @@ Paidiscura pallens,3,Arachnida
 Palaemon macrodactylus,1,Malacostraca
 Palloptera scutellata,2,Insecta
 Pan paniscus,4,Mammalia
-Pan troglodytes,2,Mammalia
-Pan troglodytes,17,Mammalia
+Pan troglodytes,19,Mammalia
 Pan troglodytes verus,2,Mammalia
 Pandion haliaeetus,8,Aves
 Pandion haliaetus,1,Aves
@@ -1619,8 +1577,7 @@ Panthera uncia,50,Mammalia
 Pantherophis guttatus,11,Reptilia
 Pantisarthrus luridus,1,Insecta
 Panurgus banksianus,1,Insecta
-Papio cynocephalus,1,Mammalia
-Papio cynocephalus,1,Mammalia
+Papio cynocephalus,2,Mammalia
 Papio hamadryas,18,Mammalia
 Papio papio,1,Mammalia
 Parabuteo unicinctus,7,Aves
@@ -1782,8 +1739,7 @@ Ponera coarctata,4,Insecta
 Pongo,1,Mammalia
 Pongo abelii,2,Mammalia
 Pongo p. pygmaeus,1,Mammalia
-Pongo pygmaeus,5,Mammalia
-Pongo pygmaeus,1,Mammalia
+Pongo pygmaeus,6,Mammalia
 Pongo pygmaeus abelii,12,Mammalia
 Pongo pygmaeus pygmaeus,1,Mammalia
 Porcellana platycheles,2,Malacostraca
@@ -1795,8 +1751,7 @@ Porphyrio gallinule,2,Aves
 Potamochoerus porcus,2,Mammalia
 Potamochoerus porcus pictus,3,Mammalia
 Potamopyrgus antipodarum,2,Gastropoda
-Potorous tridactylus,2,Mammalia
-Potorous tridactylus,13,Mammalia
+Potorous tridactylus,15,Mammalia
 Potos flavus,1,Mammalia
 Praxillella gracilis,1,Polychaeta
 Presbytis comata,6,Mammalia
@@ -1812,8 +1767,7 @@ Prionailurus planiceps,1,Mammalia
 Prionailurus rubiginosus phillipsi,13,Mammalia
 Prionailurus viverrinus,37,Mammalia
 Procavia,1,Mammalia
-Procavia capensis,2,Mammalia
-Procavia capensis,5,Mammalia
+Procavia capensis,7,Mammalia
 Procloeon pennulatum,1,Insecta
 Procyon lotor,1,Mammalia
 Proechimys goeldii,1,Reptilia
@@ -1859,8 +1813,7 @@ Ptychoptera albimana,13,Insecta
 Ptychoptera contaminata,1,Insecta
 Pudu puda,29,Mammalia
 Puffinus puffinus,4,Aves
-Pulsatrix perspicillata,1,Aves
-Pulsatrix perspicillata,1,Aves
+Pulsatrix perspicillata,2,Aves
 Pulvinaria,1,Insecta
 Puma concolor,8,Mammalia
 Pusa sibirica,1,Mammalia
@@ -1882,12 +1835,10 @@ Python molurus bivittatus,1,Reptilia
 Radiicephalus elongatus,1,Actinopterygii
 Rallus aquaticus,2,Aves
 Ramphastos toco,1,Aves
-Rangifer tarandus,1,Mammalia
-Rangifer tarandus,3,Mammalia
+Rangifer tarandus,4,Mammalia
 Rangifer tarandus fennicus,14,Mammalia
 Rangifer tarandus platyrhynchus,2,Mammalia
-Rattus norvegicus,35,Mammalia
-Rattus norvegicus,2,Mammalia
+Rattus norvegicus,37,Mammalia
 Rattus rattus,2,Mammalia
 Rattus rattus flavipectus,9,Mammalia
 Recurvirostra avosetta,2,Aves
@@ -1954,8 +1905,7 @@ Saguinus weddelli,9,Mammalia
 Saguinus weddellii,6,Mammalia
 Saimiri,1,Mammalia
 Saimiri boliviensis,10,Mammalia
-Saimiri sciureus,2,Mammalia
-Saimiri sciureus,6,Mammalia
+Saimiri sciureus,8,Mammalia
 Saimiri sciureus sciureus,2,Mammalia
 Salticus scenicus,1,Arachnida
 Sanzinia madagascariensis,2,Reptilia
@@ -1974,11 +1924,9 @@ Schizotus pectinicornis,1,Insecta
 Sciara hemerobioides,1,Insecta
 Scincus scincus,7,Reptilia
 Scissirostrum dubium,1,Aves
-Sciurus carolinensis,12,Mammalia
-Sciurus carolinensis,7,Mammalia
+Sciurus carolinensis,19,Mammalia
 Sciurus variegatoides dorsalis,1,Mammalia
-Sciurus vulgaris,32,Mammalia
-Sciurus vulgaris,111,Mammalia
+Sciurus vulgaris,143,Mammalia
 Scolelepis squamata,3,Polychaeta
 Scoletoma fragilis,1,Polychaeta
 Scolopax gallinago,2,Aves
@@ -2030,8 +1978,7 @@ Solea solea,1,Actinopterygii
 Solva marginata,1,Insecta
 Somateria fischeri,2,Aves
 Somateria mollissima,8,Aves
-Sorex araneus,10,Mammalia
-Sorex araneus,1,Mammalia
+Sorex araneus,11,Mammalia
 Sorex coronatus,1,Mammalia
 Sorex granarius,4,Mammalia
 Sorex minutus,1,Mammalia
@@ -2085,8 +2032,7 @@ Sturnus vulgaris,3,Aves
 Stylommatophora,1,Gastropoda
 Subcoccinella vigintiquatuorpunctata,3,Insecta
 Suillia variegata,2,Insecta
-Suncus murinus,8,Mammalia
-Suncus murinus,2,Mammalia
+Suncus murinus,10,Mammalia
 Suricata suricatta,5,Mammalia
 Surnia ulula,1,Aves
 Sus cebifrons negrinus,9,Mammalia
@@ -2111,8 +2057,7 @@ Tachina fera,3,Insecta
 Tachina grossa,2,Insecta
 Tachybaptus ruficollis,2,Aves
 Tachyerges salicis,1,Insecta
-Tachyglossus aculeatus,43,Mammalia
-Tachyglossus aculeatus,5,Mammalia
+Tachyglossus aculeatus,48,Mammalia
 Tachypodoiulus niger,3,Diplopoda
 Tachyporus hypnorum,1,Insecta
 Tachystola acroxantha,1,Insecta
@@ -2124,8 +2069,7 @@ Talitrus saltator,5,Malacostraca
 Talpa altaica,3,Mammalia
 Talpa europaea,2,Mammalia
 Talpa europea,3,Mammalia
-Tamandua tetradactyla,3,Mammalia
-Tamandua tetradactyla,7,Mammalia
+Tamandua tetradactyla,10,Mammalia
 Tamias sibiricus,4,Mammalia
 Tandonia budapestensis,3,Gastropoda
 Tapirus terrestris,3,Mammalia
@@ -2192,14 +2136,12 @@ Tragopan satyra,1,Aves
 Tragopan temminckii,1,Aves
 Tragulus javanicus,5,Mammalia
 Tragulus nigricans,1,Mammalia
-Tremarctos ornatus,6,Mammalia
-Tremarctos ornatus,9,Mammalia
+Tremarctos ornatus,15,Mammalia
 Trichechus manatus,3,Mammalia
 Trichoglossus haematodus haematodus,2,Aves
 Trichoglossus moluccanus,2,Aves
 Trichosirocalus troglodytes,1,Insecta
-Trichosurus vulpecula,15,Mammalia
-Trichosurus vulpecula,1,Mammalia
+Trichosurus vulpecula,16,Mammalia
 Tricyphona immaculata,3,Insecta
 Tringa totanus,18,Aves
 Triodia sylvina,1,Insecta
@@ -2210,8 +2152,7 @@ Trochalopteron milnei,7,Aves
 Trochulus hispidus,1,Gastropoda
 Trochulus striolatus,1,Gastropoda
 Troglodytes troglodydes,4,Aves
-Troglodytes troglodytes,2,Aves
-Troglodytes troglodytes,2,Aves
+Troglodytes troglodytes,4,Aves
 Trypetoptera punctulata,1,Insecta
 Tubularia,1,Hydrozoa
 Tubularia indivisa,1,Hydrozoa
@@ -2240,16 +2181,13 @@ Uria lomvia,2,Aves
 Urocyon cinereoargenteus,1,Mammalia
 Urothoe elegans,2,Malacostraca
 Ursus americanus,1,Mammalia
-Ursus arctos,3,Mammalia
-Ursus arctos,1,Mammalia
-Ursus maritimus,2,Mammalia
-Ursus maritimus,7,Mammalia
+Ursus arctos,4,Mammalia
+Ursus maritimus,9,Mammalia
 Ursus thibetanus,3,Mammalia
 Vampyroteuthis infernalis,2,Cephalopoda
 Vanellus vanellus,3,Aves
 Varanus exanthematicus,2,Reptilia
-Varanus komodoensis,33,Reptilia
-Varanus komodoensis,2,Reptilia
+Varanus komodoensis,35,Reptilia
 Varecia,1,Mammalia
 Varecia rubra,6,Mammalia
 Varecia rubra rubra,3,Mammalia
@@ -2278,8 +2216,7 @@ Vulpes lagopus,12,Mammalia
 Vulpes macrotis,2,Mammalia
 Vulpes rueppelli,1,Mammalia
 Vulpes velox,1,Mammalia
-Vulpes vulpes,8,Mammalia
-Vulpes vulpes,24,Mammalia
+Vulpes vulpes,32,Mammalia
 Vulpes vulpes arabica,3,Mammalia
 Wallabia bicolor,14,Mammalia
 Walvisteuthis virilis,1,Cephalopoda
