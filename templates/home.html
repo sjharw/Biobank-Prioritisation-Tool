@@ -22,9 +22,10 @@
           <h4 style="font-size:2vw;"> The tool </h4>
           <p> This tool has been develop to help biobanks prioritise species to collect samples from. It takes into account the species conservation
           value (IUCN Category, CITES Appendix, ED Score), the demand (requests) for samples from that species, and the number of samples already
-          present within the biobank. The tool uses the MAPISCo methodology (Defra, UK) which involves converting string data to numeric data,
-          taking the mean of invdividual scores within a category, calculating the categories z-score, applying a weight to this score, and then 
-          taking the mean of the weighted categories to produce a priority score that ranks species. <p>
+          present within the biobank. The projects adopts an alterated version of the MAPISCo methodology to generate the priority scores. 
+          The method involves converting any string data to a numeric form, normalising the individual dataset 
+          scores by diving/ inverting by the maximum, combining the datasets into their corresponding category by taking their mean, applying a weight 
+          to this category, and then taking the mean of the weighted categories to produce a priority score that ranks species. <p>
           
           <h5 style="font-size:1.4vw;"> Limitations </h5>
           <p> The tool is problematic with handling missing data, it assigns values of zero to missing data which artificially reduced the overall 

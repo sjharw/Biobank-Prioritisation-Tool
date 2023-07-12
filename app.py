@@ -202,6 +202,7 @@ def display():
     # download data if download button clicked
     if "download" in request.form:
         data.to_csv(os.path.join(DOWNLOAD_DIR + "priority-scores.csv"))
+        flash(f"Dataset downloaded to '/downloaded' folder")
 
     # get class information for filters
     classes = list(data["class"].drop_duplicates())
