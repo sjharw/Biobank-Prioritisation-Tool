@@ -34,7 +34,7 @@ if /i "%upload%"=="y" (
     :: Set up required data and files for app
     call python database_setup/generate_metadata.py
     call python database_setup/taxonomy/generate_tax_rep.py
-    @REM call python database_setup/get_api_data.py
+    call python database_setup/get_api_data.py
     call python database_setup/generate_dataframes.py
     call python database_setup/upload_to_sql.py
     call python database_setup/cache_sql_database.py
