@@ -8,6 +8,7 @@ import pandas as pd
 from functools import reduce
 from flask import Flask, flash, url_for
 import io
+from waitress import serve
 
 
 ##----- App
@@ -228,7 +229,8 @@ def display_data():
 
 # run app
 if __name__ == "__main__":
-    app.secret_key = SECRET_KEY
     app.config["SESSION_TYPE"] = "filesystem"
-    port = int(os.environ.get("PORT", 5000))
-    app.run(debug=True, host="0.0.0.0", port=port, threaded=True)
+    app.config["SECRET_KEY"] = SECRET_KEY
+    # port = int(os.environ.get("PORT", 5000))
+    # app.run(debug=True, host="0.0.0.0", port=port, threaded=True)
+    serve(app, host='0.0.0.0', port=5000)
