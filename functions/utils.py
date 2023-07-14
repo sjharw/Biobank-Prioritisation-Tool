@@ -202,6 +202,7 @@ def get_url(url: str, headers: str = "") -> requests.Response:
     return response
 
 
+
 def generate_demand(taxonomy_df: pd.DataFrame, demand_scores: json) -> pd.DataFrame:
     """
     Generates demand scores for species based on their class.
@@ -263,7 +264,9 @@ def generate_demand(taxonomy_df: pd.DataFrame, demand_scores: json) -> pd.DataFr
             "class": grouped["class"],
         }
     )
-    demand_df = demand_df.apply(pd.Series.explode).reset_index(drop=True)
+    demand_df = demand_df.explode(['full_name', 'demand']).reset_index(drop=True)
+
+
     return demand_df
 
 def get_json_response(json_data: json, data: pd.DataFrame):

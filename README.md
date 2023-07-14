@@ -242,13 +242,17 @@ Below is a list of datasources ingested or created when '/database_setup' is run
 - Demand (fake data that is generated)
 - [CryoArks](https://www.cryoarks.org/) (csv file)
 
-The ETL pipeline for loading/ creating data is broken down into the following scripts that are all contained within 'database_setup' folder:
+The Extract Transform (Load) pipeline, for creating the data required for the app to run, can be broken down into the following scripts that are all contained within 'database_setup' folder:
 
 - `get_api_data.py`: retrieves API data for IUCN and CITES
 - `generate_dataframes.py`: cleans and transforms IUCN, CITES and EDGE data, generates demand data
+- `generate_entire_dataset.py`: compiles all dataframes into single dataset
 - `upload_to_sql.py`: uploads cleaned dataframes to SQL as tables
 - `cache_database.py`: caches datasets from SQL as a single compiled dataset
-- `cache_scored_data.py`: uses cached data to generate a parquet containing species scores required for app to run
+- `generate_scored_dataset.py`: uses compiled dataset to generate a parquet containing species score data required for app to run
+
+Depending on which option you choose at installation (SQL), certain files will be run from the 'database_setup' folder
+
 
 These scripts rely on several JSON files located in the root directory of the 'database_setup' folder or within subfolders in the 'database_setup' folder.
 Within the root of 'database_setup' folder there is a `generate_metadata.py` file that creates two JSON files used by the `cache_scored_data.py` script:
