@@ -168,14 +168,15 @@ Direct edits or pushes to the main branch in this repository are not permitted. 
 |  setup.py
 |              
 |---database_setup
-|  |  cache_scored_data.py
-|  |  cache_database.py
+|  |  cache_sql_database.py
 |  |  generate_dataframes.py
+|  |  generate_entire_dataset.py
 |  |  generate_metadata.py
+|  |  generate_scored_dataset.py
 |  |  get_api_data.py
-|  |  upload_to_sql.py
 |  |  metadata.json
 |  |  scores.json
+|  |  upload_to_sql.py
 |  |  
 |  |---taxonomy
 |  |      generate_tax_rep.py
