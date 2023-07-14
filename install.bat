@@ -1,18 +1,18 @@
 @echo off
 
-@REM :: install.bat should be run from the Anaconda command line
+:: install.bat should be run from the Anaconda command line
 
-@REM echo Setting up Conda environment...
+echo Setting up Conda environment...
 
-@REM :: Drop old env
-@REM call conda deactivate
-@REM call conda env remove --name priority-env
+:: Drop old env
+call conda deactivate
+call conda env remove --name priority-env
 
-@REM :: Create and activate conda environment
-@REM call conda env create --quiet priority-env -f environment.yml
-@REM call conda activate priority-env
+:: Create and activate conda environment
+call conda env create --quiet priority-env -f environment.yml
+call conda activate priority-env
 
-@REM echo Conda environment setup successfully
+echo Conda environment setup successfully
 
 echo Do you want to upload data to SQL? (y/n)
 set /p upload=
