@@ -135,3 +135,6 @@ dmypy.json
 # Jupyter notebooks
 *.ipynb
 
+# Configuration settings
+.vscode
+
