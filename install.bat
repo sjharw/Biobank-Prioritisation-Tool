@@ -9,7 +9,7 @@ call conda deactivate
 call conda env remove --name priority-env
 
 :: Create and activate conda environment
-call conda env create --quiet priority-env -f environment.yml
+call conda env create --quiet -n priority-env -f requirements.txt
 call conda activate priority-env
 
 echo Conda environment setup successfully
