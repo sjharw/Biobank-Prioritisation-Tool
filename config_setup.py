@@ -15,16 +15,16 @@ config_object["USER"] = {
     }
 
 config_object["DATABASE"] = {
-    "DRIVER": "{SQL Server}",
-    "SERVER_NAME": sys.argv[1],
-    "DATABASE_NAME": sys.argv[2],
-    "USERNAME": sys.argv[3],
-    "PASSWORD": sys.argv[4],
+    "DRIVER": sys.argv[1],
+    "SERVER_NAME": sys.argv[2],
+    "DATABASE_NAME": sys.argv[3],
+    "USERNAME": sys.argv[4],
+    "PASSWORD": sys.argv[5],
 }
 
 config_object["API"] = {
-    "CITES": sys.argv[5], 
-    "IUCN": sys.argv[6]
+    "CITES": sys.argv[6], 
+    "IUCN": sys.argv[7]
 }
 
 # Set system pathways
