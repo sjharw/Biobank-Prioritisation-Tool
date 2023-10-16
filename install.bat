@@ -4,10 +4,6 @@
 
 echo Setting up Conda environment...
 
-:: Drop old env
-call conda deactivate
-call conda env remove --name priority-env
-
 :: Create and activate conda environment
 call conda env create --quiet -n priority-env -f requirements.txt
 call conda activate priority-env
